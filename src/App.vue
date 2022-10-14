@@ -1,28 +1,69 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <hints-block/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HintsBlock from './components/HintsBlock.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HintsBlock,
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura'),
+    url('./assets/fonts/futura-bold.woff2') format('woff2');
+  font-style: 700; 
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Kinopoisk';
+  src: local('Kinopoisk'),
+  url('./assets/fonts/kinopoisk-light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Kinopoisk';
+  src: local('Kinopoisk'),
+  url('./assets/fonts/kinopoisk-regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Kinopoisk';
+  src: local('Kinopoisk'),
+  url('./assets/fonts/kinopoisk-medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Kinopoisk';
+  src: local('Kinopoisk'),
+  url('./assets/fonts/kinopoisk-semibold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Kinopoisk';
+  src: local('Kinopoisk'),
+  url('./assets/fonts/kinopoisk-bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
 }
 </style>
