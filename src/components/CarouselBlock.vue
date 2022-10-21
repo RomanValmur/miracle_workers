@@ -39,20 +39,24 @@ export default {
       activeSlideIndex: 0,
     };
   },
+
   methods: {
     prev() {
       if (this.activeSlideIndex === 0) return;
       this.activeSlideIndex -= 1;
     },
+
     next() {
       if (this.activeSlideIndex === 7) return;
       this.activeSlideIndex += 1;
     }
   },
+
   computed: {
     activeSlide() {
         return this.slides[this.activeSlideIndex];
     },
+    
     normalizedActiveSlideIndex() {
       return this.activeSlideIndex + 1;
     }

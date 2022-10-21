@@ -18,6 +18,7 @@ import LeftSideMenuDownScroll from '@/components/LeftSideMenuDownScroll.vue';
 
 export default {
   name: 'LeftSideMenu',
+  
   components: {
     VerticalMenu,
     LeftSideMenuDownScroll,

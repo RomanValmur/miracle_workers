@@ -1,6 +1,9 @@
 <template>
   <div class="logo">
-    <img src="@/assets/images/KinoPoiskHDlogo.svg" alt="Логотип"/>
+    <img
+      src="@/assets/images/KinoPoiskHDlogo.svg"
+      alt="Логотип"
+    />
   </div>
 </template>
 
